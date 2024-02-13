@@ -1,0 +1,1 @@
+{"ast":null,"code":"const FIREBASE_URL = \"https://audio-book-fe653-default-rtdb.firebaseio.com\";\nconst STORAGE_URL = \"https://firebasestorage.googleapis.com/v0/b\";\nexport const environment = {\n  production: true,\n  FIREBASE_URL: FIREBASE_URL,\n  STORAGE_URL: STORAGE_URL\n};","map":null,"metadata":{},"sourceType":"module"}

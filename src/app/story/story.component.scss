@@ -2,7 +2,10 @@ section {
   display: flex;
   justify-content: left;
   margin-top: 100px;
+  // border: 1px solid white;
   height: 70vh;
+  margin-bottom: 50px;
+  overflow: hidden;
 }
 
 .container {
@@ -90,6 +93,7 @@ audio {
   section {
     flex-direction: column;
     align-items: center;
+    height: 70vh;
   }
   .list-group-item {
     overflow: hidden;

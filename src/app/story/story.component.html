@@ -23,7 +23,7 @@
         <img [src]="url" alt="hello" />
       </div>
       <div class="desc">
-        <p>{{bookInfo.title}}</p>
+        <p>{{bookInfo.title ? bookInfo.title : ""}}</p>
       </div>
       <div class="audio">
         <audio [src]="fullUrl" controls></audio>

@@ -24,7 +24,6 @@ export class StoryComponent implements OnInit {
     this.bookService.getBook(bookIndex).subscribe((res) => {
       this.book = res as any;
     });
-    console.log(this.book);
   }
   
     
@@ -39,8 +38,6 @@ export class StoryComponent implements OnInit {
      this.url =  `https://firebasestorage.googleapis.com/v0/b/audio-book-fe653.appspot.com/o/posters%2F${res.key}.jpg?alt=media&token=aef69868-a1b9-47ca-b0ea-ab35a3fe9fd2`;
 
      this.bookInfo = res as any;
-
-     console.log(this.url, this.bookInfo)
 
     });
 

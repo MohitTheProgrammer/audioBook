@@ -1,46 +1,47 @@
 section {
   display: flex;
   justify-content: left;
-  //   align-items: center;
-  //   border: 1px solid white;
   margin-top: 100px;
   height: 70vh;
 }
 
 .container {
   width: 40%;
-  //   border: 1px solid white;
   margin-left: 50px;
 }
 
 .container2 {
   width: 40%;
-  //   border: 1px solid white;
   margin-left: 50px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .audio {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  width: 400px;
 }
 .img img {
   width: 300px;
   height: 300px;
+  border-radius: 50%;
+//   animation-name: rotate;
+//   animation-duration: 5s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear;
+  border: 1px solid white;
 }
 .img {
-  text-align: center;
-  
+  display: flex;
+  justify-content: center;
 }
 .desc {
   text-align: center;
+  margin: 10px 0;
 }
 .desc p {
-  text-align: left;
+  text-align: center;
 }
 .list-group {
   list-style: none;
@@ -51,10 +52,10 @@ section {
 
 .list-group-item {
   border: 1px solid #ddd;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   cursor: pointer;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
 }
 
 .list-group-item:hover {
@@ -62,20 +63,27 @@ section {
   color: black;
 }
 audio {
-  width: 80%;
+  width: 90%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @media only screen and (max-width: 600px) {
   .container {
     width: 80%;
-    // border: 1px solid white;
     height: 45%;
     overflow: hidden;
     margin-left: 0;
   }
   .container2 {
     width: 80%;
-    // border: 1px solid white;
-    height: 60%;
+    height: 70%;
     overflow: hidden;
     margin-left: 0;
   }
@@ -86,5 +94,12 @@ audio {
   .list-group-item {
     overflow: hidden;
     width: 93%;
+  }
+  .img img {
+    width: 180px;
+    height: 180px;
+  }
+  .audio {
+    width: 300px;
   }
 }

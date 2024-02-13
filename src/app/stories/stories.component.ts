@@ -17,6 +17,7 @@ export class StoriesComponent implements OnInit {
   ngOnInit(): void {
     this.booksService.getBooks().subscribe(res => {
       this.books = res as any;
+      console.log(this.books)
     })
   }
 

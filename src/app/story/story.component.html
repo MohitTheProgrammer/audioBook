@@ -20,10 +20,10 @@
   <div class="container2 mt-3">
     <main *ngIf="currentAudioUrl">
       <div class="img">
-        <img src="" alt="hello" />
+        <img [src]="url" alt="hello" />
       </div>
       <div class="desc">
-        <p></p>
+        <p>{{bookInfo.title}}</p>
       </div>
       <div class="audio">
         <audio [src]="fullUrl" controls></audio>

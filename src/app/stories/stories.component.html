@@ -1,0 +1,72 @@
+
+<!-- SONGS CONTAINER -->
+
+
+<div class="center " id="songs-one">
+    <div id="songs-container">
+    
+    
+    
+        <!-- SONG -->
+    <a class="song fade-up" *ngFor="let book of books; let i = index;" [routerLink]="'/story/' + i + '/' + book.key">
+    
+        <div class="song-img">
+            <img [src]="book.key | toStorage" alt="song">
+        </div>
+    
+        <div class="song-details">
+            <div class="song-details-content">
+            <div class="song-name">{{ book.title }}</div>
+            <div class="artist-name">{{ book.category }}</div>
+            <div class="artist-name">{{ book.author}}</div>
+            </div>
+            <div class="music-player">
+             
+                <div class="play-song mouse">
+                    <img src="assets/images/play.png" alt="play" data-song="blindinglights">
+                    <!--   DATA-SONG AND DATA-AUDIO VALUE SHOULD MATCH   -->
+        
+                </div>
+            </div>
+        </div>
+    </a>
+        <!-- SONG -->
+    
+
+    
+    
+    
+    
+    
+    
+    </div>
+    </div>
+    
+    <!-- SONGS CONTAINER -->
+    
+    
+    
+     <!-- HEADPHONE IMG -->
+     <div class="headphone img text">
+        <img src="assets/images/headphone.png" title="headphone zone" class="text" alt="headphone">
+      </div>
+       <!-- HEADPHONE IMG -->
+      
+                   
+       
+     <!-- MUSIC INDICATOR -->
+     <div class="music-indicator">
+        <span style="--i:1;" class="music-indicator-span"></span>
+        <span style="--i:2;" class="music-indicator-span "></span>
+        <span style="--i:3;" class="music-indicator-span "></span>
+        <span style="--i:4;" class="music-indicator-span "></span>
+      </div>
+       <!-- MUSIC INDICATOR -->
+      
+                   
+    
+    
+    <!-- progress-bar -->
+    <div class="progress-bar-container fade-in">
+        <div class="progressbar"></div>
+    </div>

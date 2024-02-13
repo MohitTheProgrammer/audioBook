@@ -1,0 +1,33 @@
+<section>
+  <div class="container mt-3 audio-list-container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <aside>
+          <ul class="list-group audio-list">
+            <li
+              (click)="setSong(audio)"
+              class="list-group-item audio-list-item"
+              *ngFor="let audio of book?.files"
+            >
+              {{ audio }}
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <div class="container2 mt-3">
+    <main *ngIf="currentAudioUrl">
+      <div class="img">
+        <img src="" alt="hello" />
+      </div>
+      <div class="desc">
+        <p></p>
+      </div>
+      <div class="audio">
+        <audio [src]="fullUrl" controls></audio>
+      </div>
+    </main>
+  </div>
+</section>
